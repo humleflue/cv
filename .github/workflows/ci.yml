@@ -2,7 +2,7 @@ name: Build CV PDF
 on:
   push:
     branches:
-      - master  # trigger branch
+      - main  # trigger branch
 jobs:
   build_latex:
     runs-on: ubuntu-latest
