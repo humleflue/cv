@@ -13,7 +13,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: cvdanish.tex
+          root_file: CV_Lasse_D_Skaalum.tex
 
       - name: Create Release
         id: create_release
@@ -33,6 +33,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} 
-          asset_path: ./cvdanish.pdf
-          asset_name: cvdanish.pdf
+          asset_path: ./CV_Lasse_D_Skaalum.pdf
+          asset_name: CV_Lasse_D_Skaalum.pdf
           asset_content_type: pdf
