@@ -167,8 +167,12 @@
 % light color
 \definecolor{lightcol}{RGB}{245,245,245}
 
+% soft light blue color (for hyperlinks)
+\definecolor{lightblue}{RGB}{51, 122, 183}
+
 % Package for links, must be the last package used
 \usepackage[hidelinks]{hyperref}
+\hypersetup{colorlinks,urlcolor=lightblue} 
 
 % returns minipage width minus two times \fboxsep
 % to keep padding included in width calculations
@@ -327,7 +331,6 @@
 	\end{center}
 }
 
-
 %============================================================================%
 %
 %
@@ -359,7 +362,7 @@
 		\cvsection{FÆRDIGHEDER}
 
 		% \cvskill{Undervisningserfaring}
-		%         {12 år} {1} \\[-2pt]
+		%} {1} \\[-2pt]
 
 		% \cvskill{Samarbejde}
 		%         {} {1} \\[-2pt]
@@ -368,49 +371,61 @@
 		%         {} {1} \\[-2pt]
 
 		% \cvskill{Googling}
-		% {20 år} {1} \\[-2pt]
+		%} {1} \\[-2pt]
 
 		\cvskill{C\# / .NET}
-		{4 år} {1} \\[-2pt]
+		{} {1} \\[-2pt]
 
 		\cvskill{TypeScript / React.js}
-		{3 år} {1} \\[-2pt]
-
-		\cvskill{Azure}
-		{3 år} {0.7} \\[-2pt]
-
-		% \cvskill{TypeScript}
-		% {2 år} {0.9} \\[-2pt]
+		{} {1} \\[-2pt]
 		
 		% \cvskill{JavaScript}
-		% {1 ½ år} {0.9} \\[-2pt]
+		%} {0.9} \\[-2pt]
+
+		\cvskill{Docker}
+		{} {0.9} \\[-2pt]
+
+		\cvskill{Git}
+		{} {0.9} \\[-2pt]
 		
-		\cvskill{Java}
-		{1 år} {0.7} \\[-2pt]
-
-		\cvskill{C (ANSI C89)}
-		{1 ½ år} {0.7} \\[-2pt]
-
-		% \cvskill{Git}
-		% {4 år} {0.8} \\[-2pt]
-
-		\cvskill{React Native}
-		{1 år} {0.7} \\[-2pt]
-
-		% \cvskill{Node.js}
-		% {2 år} {0.7} \\[-2pt]
+		\cvskill{Node.js}
+		{} {0.9} \\[-2pt]
 		
-		\cvskill{SQL}
-		{2 ½ år} {0.7} \\[-2pt]
+		\cvskill{Python}
+		{} {0.8} \\[-2pt]
 		
+		\cvskill{Azure}
+		{} {0.8} \\[-2pt]
+		
+		\cvskill{Java / Spring Boot}
+		{} {0.7} \\[-2pt]
+
+		\cvskill{Grafana}
+		{} {0.7} \\[-2pt]
+
+		\cvskill{Apache Kafka}
+		{} {0.6} \\[-2pt]
+
+		% \cvskill{SQL}
+		%} {0.7} \\[-2pt]
+		
+		% \cvskill{C (ANSI C89)}
+		%} {0.6} \\[-2pt]
+
+		% \cvskill{React Native}
+		%} {0.6} \\[-2pt]
+
+		\cvskill{Apache Flink}
+		{} {0.5} \\[-2pt]
+
+		% \cvskill{Swift}
+		% {} {0.5} \\[-2pt]
+
 		\cvskill{Kotlin}
-		{½ år} {0.5} \\[-2pt]
+		{} {0.5} \\[-2pt]
 
-		\cvskill{Swift}
-		{½ år} {0.5} \\[-2pt]
-
-		% \cvskill{Softwareingeniør- studerende}
-		% {3 år} {0.6} \\[-2pt]
+		% \cvskill{AWS}
+		%} {0.5} \\[-2pt]
 		
 		% \vfill\null
 		% \iconhref{Home}{12}{Skaalum.eu (Portfolio)}{https://skaalum.eu/}{black}\\[6pt]
@@ -418,10 +433,11 @@
 
 		\vfill\null
 		\cvsection{KONTAKT}\\
-		\icontext{MapMarker}{12}{Strynøgade 5, 1. 05\\2100 København, Danmark}{black}\\[6pt]
-		\iconhref{MobilePhone}{12}{+45 4241 1996}{tel:+4542411996}{black}\\[6pt]
-		\iconemail{Envelope}{12}{lasse.skaalum@gmail.com}{black}\\[6pt]
-		\iconhref{Linkedin}{12}{linkedin.com/in/lasse-skaalum}{https://www.linkedin.com/in/lasse-skaalum/}{black}\\[6pt]
+		\icontext{MapMarker}{12}{\#106, Almeria E, Block C\\137 Al Mouj, Muscat, Oman}{black}\\[6pt]
+		% \iconhref{MobilePhone}{12}{+45 4241 1996}{tel:+4542411996}{black}\\[6pt]
+		\iconhref{MobilePhone}{12}{+968 7748 1996}{tel:+96877481996}{black}\\[6pt]
+		\iconemail{Envelope}{12}{lasse@bluebirdday.dk}{black}\\[6pt]
+		\iconhref{Linkedin}{12}{linkedin.com/in/lasse-skaalum}{https://www.linkedin.com/in/lasse-skaalum/}{black}\\[-12pt]
 
 		% \vfill\null
 		% \cvqrcode{0.7}
@@ -436,7 +452,7 @@
 		{2019 - 2022}
 		{B. Sc. Software}
 		{Aalborg University}
-		{\textbf{Kursusoversigt (klikbar)}
+		{\textbf{Kursusoversigt}
 			\setlist{leftmargin=4mm} %reduces the margin for this itemize to make more space
 			\cvlist{
 				% 1. semester
@@ -525,7 +541,7 @@
 		{2023}
 		{Kubernetes Developer}
 		{\href{https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/}{Certificeret Kubernetes Application Developer (CKAD)}}
-		{En CKAD kan designe, bygge, konfigurere og eksponere cloud native-applikationer til Kubernetes. En CKAD kan definere applikationsressourcer og bruge Kuberneteskoncepter til at lave/migrere, konfigurere, eksponere og observere skalerbare applikationer.}
+		{En CKAD kan designe, bygge, konfigurere og eksponere cloud native-applikationer til Kubernetes.}
 
 
 		% \cvmetaevent
@@ -585,11 +601,11 @@
 		\emergencystretch 3em
 		\cvsection{PROFIL}
 
-		\cvtext{Jeg er en struktureret, videnshungrende, omhyggelig, og ambitiøs softwarenørd. Jeg kan byde ind med et stort drive, en lærende tilgang samt en stor nysgerrighed.\\
+		\cvtext{Jeg er en ambitiøs, ekstrovert og entreprenant full-stack softwareudvikler med flair for komplekse backendopgaver, som graviterer mod arbejdspladser, hvor socialt samværd og vidensdeling er i fokus.\\
+		
+		Jeg har 3 års fuldtidserfaring som softwareudvikler og har altid haft tekniske projekter, som jeg har mingeleret med efter arbejde - alt fra startups til home automation.\\
 
-			Jeg udfordrer gerne vanetænkning, og har altid øje for ny teknologi og på optimering af løsninger. Jeg arbejder altid ihærdigt med mine opgaver, men har også et godt øje for, om der er brug for en hjælpende hånd i teamet.\\
-
-			Hvis I vælger at ansætte mig, vil I få en hårdtarbejdende kollega, som naturligt bidrager til fællesskabet. I kan forvente en ressource, som arbejder for altid at fremme udvikling, og som altid er opsøgende på nye udfordringer.
+		Hvis I vælger at ansætte mig, så vil I få en selvdisciplineret, udadvendt og dygtig softwareudvikler, som formår at skrive knaldgod kode i samarbej-de med sine kollegaer.
 		}
 
 		%----------------------------------------------------------------------------------------
@@ -599,30 +615,47 @@
 		\cvsection{ERHVERVSERFARING}
 
 		\cvevent
-		{Jun 23 - nu}
+		{Aug 24 - Sep 25}
 		{Softwarekonsulent}
-		{Trifork}
+		{Trifork - Muscat}
+		{Udstationeret på Big Data projekt}
+		{\cvlist{
+			\item Ansvarlig for implementering af nye features, bugfixes, automatiseringer samt udskifting af fysisk hardware på en Big Data platform med yderst store datamængder.
+			\item Varetog en kritisk rolle for projektet i udviklings- test- og implementeringsfasen af platformen.
+			\item Pitchede \href{https://trifork.com/corax-ai/}{Corax AI} og \href{https://trifork.com/dataplatform/}{Corax Data} for potentielle kunder i Oman.
+		}}%Arbejdsopgaver
+		{\cvlist{
+			\item Spring Boot (Java), Python, Docker, Grafana, Apache Kafka, Apache Flink, Elasticsearch, JavaScript, Node.js, Ansible
+		}}%Involverede teknologier
+		{}%Resultater
+
+		\cvevent
+		{Jun 23 - Jul 24}
+		{Softwarekonsulent}
+		{Trifork - København}
 		{}
 		{}%Arbejdsopgaver
 		{\cvlist{
-			\item ASP.NET (C\#), Azure, Docker, Kubernetes React.js (TypeScript)
+			\item ASP.NET (C\#), Azure, Docker, React.js (TypeScript), Node.js, Swift
 		}}%Involverede teknologier
 		{\cvlist{
-			\item Stod for cloudmigreringen af Banedanmarks enterprise applikation, Mobile Kontrolskemaer (MKS).
+			\item Forbandt SAP og MongoDB's Realm med microservices ifbm. version 3 af Banedanmarks app, Vedligehold (VHQM).
+			\item Stod for cloudmigreringen af Banedanmarks webapplikation, Mobile Kontrolskemaer (MKS).
 			\item Udviklede Speak-S for DSB - en platform som bruges til at planlægge udkald på S-Togsstationerne i Danmark.
 		}}%Resultater
 
 		\cvevent
 		{Sep 23 - nu}
-		{Freelance Softwareudvikler}
-		{Bluebird Day Consulting}
+		{Interim CTO}
+		{DJTILBUD (deltid)}
 		{}
 		{}%Arbejdsopgaver
 		{\cvlist{
-			\item React.js (TypeScript), Next.js, Supabase
+			\item React.js (TypeScript), Next.js, Supabase, Grafana
 			}}%Involverede teknologier
 		{\cvlist{
-			\item Stod for udviklingen af DJTILBUDs nye platform, hvor kunder kan modtage tre tilbud fra forskellige DJs.
+			\item Stod for at udvikle \href{https://djtilbud.dk/}{DJTILBUD}s platform fra bunden af, hvor kunder kan modtage tre tilbud fra forskellige DJs.
+			\item Jobsamtaler samt oplæring af udenlandske software freelancere.
 		}}%Resultater
 
 		\cvevent
@@ -646,7 +679,7 @@
 		{Jun 21 - Jun 22}
 		{Softwareudvikler}
 		% {Studenterprogrammør}
-		{Trifork}
+		{Trifork - Aalborg}
 		{}
 		{\cvlist{
 				\item Domænemodellering af et HR-datasystem både i backend og på databaseniveau.
@@ -832,23 +865,23 @@
 		%	FRIVILLIGE GØREMÅL
 		%----------------------------------------------------------------------------------------
 		% \vfill\null
-		\cvsection{FRIVILLIGE GØREMÅL}
+		% \cvsection{FRIVILLIGE GØREMÅL}
 
-		\cvevent
-		{Dec 20 - Jun 22}
-		{Formand}
-		{ABK-Net}
-		{Vi havde ansvaret for alle 198 lejligheders internet, kollegiets hjemmeside samt kollegiets mailservice. Dette indebar håndtering af sikkerhed samt vedligeholdelse af systemerne.\\\\
-			GitLab: \url{https://gitlab.com/abk-aalborg}\\
-		}
-		{}%Arbejdsopgaver
-		{\cvlist{
-				\item Hugo, Netlify CMS, NixOS, Grafana
-			}}%Involverede teknologier
-		{\cvlist{
-				\item Kollegiets hjemmeside: \url{https://abk-aalborg.dk/}
-				\item Opsatte netværket på ny fra bunden af. Det resulterede i en opgradering af hver kollegianers internetforbindelse fra 100 Mbit til 1 Gbit.
-			}}%Resultater
+		% \cvevent
+		% {Dec 20 - Jun 22}
+		% {Formand}
+		% {ABK-Net}
+		% {Vi havde ansvaret for alle 198 lejligheders internet, kollegiets hjemmeside samt kollegiets mailservice. Dette indebar håndtering af sikkerhed samt vedligeholdelse af systemerne.\\\\
+		% 	GitLab: \url{https://gitlab.com/abk-aalborg}\\
+		% }
+		% {}%Arbejdsopgaver
+		% {\cvlist{
+		% 		\item Hugo, Netlify CMS, NixOS, Grafana
+		% 	}}%Involverede teknologier
+		% {\cvlist{
+		% 		\item Kollegiets hjemmeside: \url{https://abk-aalborg.dk/}
+		% 		\item Opsatte netværket på ny fra bunden af. Det resulterede i en opgradering af hver kollegianers internetforbindelse fra 100 Mbit til 1 Gbit.
+		% 	}}%Resultater
 
 		% \cvevent
 		% {Aug 20 - Jun 22}
