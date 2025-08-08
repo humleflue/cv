@@ -1,3 +1,5 @@
+% !TEX root = ./CV_Lasse_D_Skaalum.tex
+
 %============================================================================%
 %
 %	DOCUMENT DEFINITION
@@ -101,7 +103,7 @@
 % remove all possible margins
 \geometry{top=1cm, bottom=1cm, left=1cm, right=1.5cm}
 
-% fixes a wierd bug where items in itemize environments would break the margin
+% fixes a weird bug where items in itemize environments would break the margin
 \usepackage{enumitem}
 \setlist{rightmargin=2.5mm}
 
@@ -275,13 +277,13 @@
 
 	\ifthenelse{\isempty{#7}}{}{
 		\vspace{1pt} %Her stod 9pt før
-		\cvtext{\textbf{Resultater:}}
+		\cvtext{\textbf{Results:}}
 		{#7}
 	}
 
 	\ifthenelse{\isempty{#6}}{}{
 		\vspace{1pt} %Her stod 9pt før
-		\cvtext{\textbf{Involverede teknologier:}}
+		\cvtext{\textbf{Technologies:}}
 		{#6}
 	}
 	\vspace{14pt}
@@ -314,7 +316,7 @@
 %	QR CODE
 %----------------------------------------------------------------------------------------
 
-% Renders a qrcode image (centered, relative to the parentwidth)
+% Renders a qr code image (centered, relative to the parentwidth)
 % param 1: percent width, from 0 to 1
 \newcommand{\cvqrcode}[1] {
 	\begin{center}
@@ -345,13 +347,16 @@
 		%---------------------------------------------------------------------------------------
 		%	META IMAGE
 		%----------------------------------------------------------------------------------------
-		\includegraphics[width=0.94\linewidth]{pb.jpg}	%trimming relative to image size and aligning "FÆRDIGHEDER" with "PROFIL"
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.93\linewidth]{pb.jpg}	%trimming relative to image size and aligning "FÆRDIGHEDER" with "PROFIL"
+		\end{figure}
 
 
 		%---------------------------------------------------------------------------------------
 		%	META SKILLS
 		%----------------------------------------------------------------------------------------
-		\cvsection{FÆRDIGHEDER}
+		\cvsection{SKILLS}
 
 		% \cvskill{Undervisningserfaring}
 		%         {12 år} {1} \\[-2pt]
@@ -362,48 +367,60 @@
 		% \cvskill{Kommunikation}
 		%         {} {1} \\[-2pt]
 
-		% \cvskill{Googling}
-		% {20 år} {1} \\[-2pt]
+%		\cvskill{Googling}
+%		{20 yr} {1} \\[-2pt]
 
-		\cvskill{C\#}
-		{2 ½ år} {0.9} \\[-2pt]
+		\cvskill{C\# / .NET}
+		{4 yr} {1} \\[-2pt]
 
-		\cvskill{JavaScript}
-		{1 år} {0.9} \\[-2pt]
+		\cvskill{TypeScript / React.js}
+		{3 yr} {1} \\[-2pt]
 
-		\cvskill{TypeScript}
-		{1 år} {0.9} \\[-2pt]
+		\cvskill{Azure}
+		{3 yr} {0.7} \\[-2pt]
 
-		\cvskill{C (ANSI C89)}
-		{1 ½ år} {0.8} \\[-2pt]
-
-		\cvskill{Git (CLI)}
-		{3 år} {0.8} \\[-2pt]
+		% \cvskill{TypeScript}
+		% {2 yr} {0.9} \\[-2pt]
+		
+		% \cvskill{JavaScript}
+		% {1 ½ yr} {0.9} \\[-2pt]
 
 		\cvskill{Java}
-		{½ år} {0.7} \\[-2pt]
+		{1 yr} {0.7} \\[-2pt]
 
+		\cvskill{C (ANSI C89)}
+		{1 ½ yr} {0.7} \\[-2pt]
+
+		% \cvskill{Git}
+		% {4 yr} {0.8} \\[-2pt]
+
+		\cvskill{React Native}
+		{1 yr} {0.7} \\[-2pt]
+
+		% \cvskill{Node.js}
+		% {2 yr} {0.7} \\[-2pt]
+		
 		\cvskill{SQL}
-		{2 år} {0.7} \\[-2pt]
+		{2 ½ yr} {0.7} \\[-2pt]
+		
+		\cvskill{Kotlin}
+		{½ yr} {0.5} \\[-2pt]
 
-		\cvskill{Node.js}
-		{1 år} {0.6} \\[-2pt]
+		\cvskill{Swift}
+		{½ yr} {0.5} \\[-2pt]
 
-		% \cvskill{Swift}
-		%         {2 mdr} {0.3} \\[-2pt]
-
-		\cvskill{Softwareingeniør- studerende}
-		{2 ½ år} {0.84} \\[-2pt]
-		\newline
-
-		\iconhref{Home}{12}{LasseDS.dk (Portfolio)}{https://lasseds.dk/}{black}\\[6pt]
+		% \cvskill{Softwareingeniør- studerende}
+		% {3 yr} {0.6} \\[-2pt]
+		
+		% \vfill\null
+		% \iconhref{Home}{12}{Skaalum.eu (Portfolio)}{https://skaalum.eu/}{black}\\[6pt]
 		\iconhref{Github}{12}{GitHub.com/humleflue}{https://github.com/humleflue}{black}\\[6pt]
 
 		\vfill\null
 		\cvsection{KONTAKT}\\
-		\icontext{MapMarker}{12}{Borgmester Jørgensensvej 5\\1. sal, lejl. 97\\9000 Aalborg, Danmark}{black}\\[6pt]
+		\icontext{MapMarker}{12}{Strynøgade 5, 1. 05\\2100 Copenhagen, Denmark}{black}\\[6pt]
 		\iconhref{MobilePhone}{12}{+45 4241 1996}{tel:+4542411996}{black}\\[6pt]
-		\iconemail{Envelope}{12}{lasse.skaalum@gmail.com}{black}\\[6pt]
+		\iconemail{Envelope}{12}{lasse@bluebirdday.dk}{black}\\[6pt]
 		\iconhref{Linkedin}{12}{linkedin.com/in/lasse-skaalum}{https://www.linkedin.com/in/lasse-skaalum/}{black}\\[6pt]
 
 		% \vfill\null
@@ -413,75 +430,72 @@
 		%	EDUCATION
 		%----------------------------------------------------------------------------------------
 		\newpage
-		\cvsection{UDDANNELSE}
+		\cvsection{EDUCATION}
 
 		\cvmetaevent
-		{2019 - nu}
+		{2019 - 2022}
 		{B. Sc. Software}
 		{Aalborg University}
-		{Studerer til softwareingeniør.\\
-
-			\textbf{Kursusoversigt (klikbar)}
+		{\textbf{Course Overview (clickable)}
 			\setlist{leftmargin=4mm} %reduces the margin for this itemize to make more space
 			\cvlist{
-				\setlength{\itemsep}{1pt}
 				% 1. semester
 				\item \href
 				{https://moduler.aau.dk/course/2019-2020/DSNDATFB105}
-				{Imperativ programmering}
+				{Imperative programming}
 				\item \href
 				{https://moduler.aau.dk/course/2019-2020/DSNDATFB103}
-				{Datalogiens teoretiske\\grundlag}
+				{Discrete Mathematics}
 				% 2. semester
 				\item \href
 				{https://moduler.aau.dk/course/2019-2020/DSNDATFB211}
-				{Algoritmer og datastrukturer}
+				{Algorithms and Data Structures}
 				\item \href
 				{https://moduler.aau.dk/course/2019-2020/DSNDATFB212}
-				{Internetværk og webpro-\\grammering}
+				{Internet and Web Development}
 				\item \href
 				{https://moduler.aau.dk/course/2019-2020/DSNDATFB202}
-				{Sandsynlighedsteori og\\Lineær algebra}
+				{Probability Theory and Linear Algebra}
 				% 3. semester
 				\item \href
 				{https://moduler.aau.dk/course/2019-2020/DSNDATFB311}
-				{Objektorienteret program-\\mering}
+				{Object Oriented Programming}
 				\item \href
 				{https://moduler.aau.dk/course/2019-2020/DSNDATFB312}
-				{Systemudvikling}
+				{System Development}
 				\item \href
 				{https://moduler.aau.dk/course/2019-2020/DSNDATFB313}
-				{Design og evaluering af\\brugergrænseflader}
+				{Design and Evaluation of User Interfaces}
 				% 4. semester
 				\item \href
 				{https://moduler.aau.dk/course/2019-2020/DSNDATFB411}
-				{Sprog og oversættere}
+				{Languages and Compilers}
 				\item \href
 				{https://moduler.aau.dk/course/2019-2020/DSNDATFB412}
-				{Syntaks og semantik}
+				{Syntax and Semantics}
 				\item \href
 				{https://moduler.aau.dk/course/2019-2020/DSNDATFB413}
-				{Computerarkitektur og operativsystemer}
+				{Computer Architecture and Operating Systems}
 				% 5. semester
 				\item \href
 				{https://moduler.aau.dk/course/2019-2020/DSNDATFB512}
-				{Agil Software Engineering}
+				{Agile Software Engineering}
 				\item \href
 				{https://moduler.aau.dk/course/2019-2020/DSNDATFB513}
-				{Maskinintelligens}
+				{Machine Intelligence}
 				\item \href
 				{https://moduler.aau.dk/course/2019-2020/DSNDATFB514}
-				{Databasesystemer}
+				{Database Systems}
 				% 6. semester
 				\item \href
 				{https://moduler.aau.dk/course/2019-2020/DSNSWB611}
-				{Algoritmer og beregnelighed}
+				{Advanced Algorithms and Computability}
 				\item \href
 				{https://moduler.aau.dk/course/2019-2020/DSNSWB612}
-				{Modeller og værktøjer for Cyber Physical Systems}
+				{Models and Tools for Cyber-Physical Systems}
 				\item \href
 				{https://moduler.aau.dk/course/2019-2020/DSNSWB613}
-				{Sikkerhed}
+				{Security}
 			}}
 		\setlist{leftmargin=10mm} % reset the margin of the itemize
 
@@ -505,7 +519,14 @@
 		%	CERTIFICATION
 		%----------------------------------------------------------------------------------------
 		% \newpage
-		\cvsection{CERTIFI-CERINGER}
+		\cvsection{CERTIFICATION}
+		
+		\cvmetaevent
+		{2023}
+		{Kubernetes Developer}
+		{\href{https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/}{Certified Kubernetes Application Developer (CKAD)}}
+		{The CKAD can design, build and deploy cloud-native applications for Kubernetes.\\
+A CKAD can define application resources and use Kubernetes core primitives to create/migrate, configure, expose and observe scalable applications.}
 
 		% \cvmetaevent
 		% {2019}
@@ -513,23 +534,23 @@
 		% {Forårssemester}
 		% {Forårssemester på \textbf{Gerlev Idrætshøjskole} med parkour som hovedfag og springgymnastik samt windsurfing som sidefag.}
 
-		\cvmetaevent
-		{2018}
-		{Skiinstruktør}
-		{BSI 1}
-		{En uges skiinstruktørundervisning med \textbf{Den Danske Skiskole}.}
+		% \cvmetaevent
+		% {2018}
+		% {Skiinstruktør}
+		% {BSI 1}
+		% {En uges skiinstruktørundervisning med \textbf{Den Danske Skiskole} og bestod alle mine eksaminer.}
 
 		% \cvmetaevent
 		% {2016}
 		% {Master Class Matematik}
 		% {Master Class Matematik 2016}
-		% {Deltog i Master Class Matematik 2016, som er et kursus arrangeret af \textbf{Sciencetalenter} for særligt talentfulde elever i 3.g.}
+		% {Deltog i Master Class Matematik 2016 (\textbf{RSA kryptering}), som er et kursus arrangeret af \textbf{Sciencetalenter} for særligt talentfulde elever i 3.g.}
 
-		\cvmetaevent
-		{2015}
-		{Parkourtræner}
-		{DGIs parkourtræneruddannelse}
-		{Modtog en uges parkour-trænerundervisning.}
+		% \cvmetaevent
+		% {2015}
+		% {Parkourtræner}
+		% {DGIs parkourtræneruddannelse}
+		% {Modtog en uges parkour-trænerundervisning og bestod min eksamen.}
 
 		% \vfill\null
 		% \cvqrcode{0.7}
@@ -549,12 +570,13 @@
 				\begin {center}
 				\HUGE{ \textbf{ \textcolor{white}{ \uppercase{ Lasse D. Skaalum } } } } \\[-24pt]
 				\textcolor{white}{ \rule{0.1\textwidth}{1.25pt} } \\[4pt]
-				\large{ \textcolor{white} {Softwareingeniørstuderende} }
+%				\large{ \textcolor{white} {Turning coffee into code} }
+				\large{ \textcolor{white} {Full-stack Developer} }
 				\end {center}
 			\end{minipage}} \\[14pt]
 		\vspace{-12pt}
 
-		\textit{Senest opdateret: \today}
+		\textit{Last updated: \today}
 
 		%---------------------------------------------------------------------------------------
 		%	PROFILE
@@ -562,75 +584,106 @@
 		\vfill\null
 		% Make sure no text breaks the margins
 		\emergencystretch 3em
-		\cvsection{PROFIL}
+		\cvsection{PROFILE}
 
-		\cvtext{Jeg er en struktureret, omhyggelig og ambitiøs softwareingeniørstuderende, som går på 6. semester.\\
+		\cvtext{I am a structured, ambitious and curious software engineer with a passion for learning new technologies. I am a team player and I enjoy working with others. I am always looking for new challenges and I naturally take on responsibility.\\
 
-			Jeg er passioneret og dedikeret med softwareudvikling. Jeg har stort set altid haft et job ved siden af studiet, og det fungerer rigtig godt for mig. Jeg udfordrer gerne vanetænkning, og har altid øje for ny teknologi og på optimering af løsninger. Jeg arbejder altid ihærdigt med mine opgaver, men har også et godt øje for, om der er brug for en hjælpende hånd i teamet.\\
+		I am interested in a lot of different aspects of software development, and I love being the best mentor possible to my more junior colleagues. \\
 
-			Hvis I vælger at give godkende mig til \textbf{Innofounderforløbet}, vil I kunne forvente at jeg giver den maks gas, og tilsidesætter alt andet i mit liv indtil endt forløb, for at se hvor langt vi kan nå med Instructr. Jeg bor i øjeblikket i Aalborg, men jeg flytter til København, for at kunne komme tættere på min samarbejdspartnere, så vi kan mærke hinandens energi i hverdagen.
+		If you choose to hire me, you will get a hardworking colleague who naturally contributes to the team. You can expect a resource that works tirelessly to achieve the best possible result and who is eager to take on new challenges.\\
 		}
 
 		%----------------------------------------------------------------------------------------
 		%	WORK EXPERIENCE
 		%----------------------------------------------------------------------------------------
 		\vfill\null
-		\cvsection{ERHVERVSERFARING}
+		\cvsection{WORK EXPERIENCE}
 
 		\cvevent
-		{Feb 22 - nu}
-		{Teknisk Direktør \& Medstifter}
-		{Instructr - Din digitale skiskole}
-		{Instructr er en skiinstruktionsplatform, som stiller et virtuelt miljø til rådighed for skientusiaster, hvor de kan modtage billig og fleksibel instruktion fra certificerede skiinstruktører.}
-		{}%Arbejdsopgaver
-		{}%Involverede teknologier
-		{}%Resultater
-
-		\cvevent
-		{Jun 21 - nu}
-		{Studenterprogrammør}
+		{Jun 23 - now}
+		{Software Consultant}
 		{Trifork}
-		{Studenterprogrammør hos softwareinnovationsfirmaet Trifork, hvor jeg hjælper konsulenterne på kontoret med at løse diverse programmeringsrelaterede opgaver.}
+		{}
+		{}%Arbejdsopgaver
 		{\cvlist{
-				% \item Domænemodellering af et HR-datasystem både i backend og på databaseniveau.
-				\item API design og implementation.
-				% \item Generering af mock data, som ud fra en JSON-konfiguration genererede og indsatte data i SQL-databasen.
-			}}%Arbejdsopgaver
-		{\cvlist{
-				\item C\#, ASP.NET Core, ASP.NET Web API, OpenAPI (Swagger), Entity Framework Core, Microsoft SQL Server, Azure Cosmos DB, TypeScript, Azure DevOps, Swift, Kotlin
-				\item Azure DevOps, Docker, Git
+			\item ASP.NET (C\#), Azure, Docker, Kubernetes, React.js (TypeScript)
 			}}%Involverede teknologier
 		{\cvlist{
-				\item Reddede en stor demo for en af Danmarks største virksomheder fra at gå i vasken på morgenen, hvor demoen skulle finde sted, ved at lave et hotfix. Et af dependenciesne var uheldigvis tagget med \texttt{:latest}, hvilket havde fået hele systemet til at bryde sammen efter en softwareopdatering aftenen forinden.
-			}}%Resultater
+			\item Lead the cloud migration of Banedanmark's enterprise solution, Mobile Kontrolskemaer (MKS).
+			\item Developed Speak-S for DSB - a platform used for orchestrating scheduled calls to the S-Train stations in Denmark.
+		}}%Resultater
+
+		\cvevent
+		{Sep 23 - now}
+		{Freelance Software Developer}
+		{Bluebird Day Consulting}
+		{}
+		{}%Arbejdsopgaver
+		{\cvlist{
+			\item React.js (TypeScript), Next.js, Supabase
+			}}%Involverede teknologier
+		{\cvlist{
+			\item Lead the development of DJTILBUDs broker platform where customers can get three non-binding offers from DJs.
+		}}%Resultater
+
+		\cvevent
+		{Feb 22 - Jun 23}
+		{CTO \& Co-Founder}
+		{Instructr}
+		{Instructr was a B2B Software-as-a-Service (SaaS) company where I built a white-label blended learning platform for sports schools such as ski schools and surf schools.}
+		{\cvlist{
+			\item Development of the platform (frontend, backend, DevOps og cloud)
+			\item Project management and managing 1 full-time employee and 5 full-time interns
+		}}%Arbejdsopgaver
+		{\cvlist{
+			\item ASP.NET (C\#), React.js (TypeScript), React Native, Azure
+		}}%Involverede teknologier
+		{\cvlist{
+			\item Fully functional platform with multiple environments and paying customers using the production system
+			\item Winner of several soft-funding competitions: Innofounder (840.000 DKK) and CBS Startup Competition (70.000 DKK)
+		}}%Resultater
+
+		\cvevent
+		{Jun 21 - Jun 22}
+		{Software Developer}
+		% {Studenterprogrammør}
+		{Trifork}
+		{}
+		{\cvlist{
+				\item Domain modelling of an HR-datasystem both backend and database
+				\item API design and implementation
+				\item Development of a welding emulator in Swift
+			}}%Arbejdsopgaver
+		{\cvlist{
+				\item ASP.NET (C\#), React.js (TypeScript), React Native, MS SQL, Azure, Docker, Swift, Kotlin, Java
+			}}%Involverede teknologier
+		{}%Resultater
 
 		% \cvevent
-		% {Maj 21 - nu}
+		% {Maj 21 - Jun 22}
 		% {Mentor}
 		% {Aalborg Universitet}
-		% {Mentor for en softwareenginiørstuderende. Jeg hjælper den studerende med at forstå stoffet i kurserne samt at finde sig til rette socialt.}
+		% {Mentor for en softwareenginiørstuderende. Jeg hjalp den studerende med at forstå stoffet i kurserne samt at finde sig til rette socialt.}
 		% {}%Arbejdsopgaver
 		% {}%Involverede teknologier
 		% {\cvlist{
-		% 		\item Min mentee havde ambitioner om at blive den dygtigste inde for vores fag, så det gjorde jeg selvfølgelig mit bedste for at hjælpe ham med. Det har resulteret i flere topkarakterer, som han har været meget stolt af.
+		% 		\item Min mentee havde ambitioner om at blive den dygtigste software ingeniør, så det gjorde jeg mit bedste for at hjælpe ham med. Det har resulteret i flere topkarakterer, som han har været meget stolt af.
 		% 	}}%Resultater
 
 		\cvevent
 		{Sep 20 - Jun 21}
-		{Hjælpelærer}
-		{Aalborg Universitet}
-		{Hjælpelærer i fagene Imperativ Programmering og Algoritmer og Datastrukturer.}
+		{Teaching Assistant}
+		{Aalborg University}
+		{Teaching Assistant in the courses \textbf{Imperative Programming} and \textbf{Algorithms and Data Structures}.}
 		{\cvlist{
-				\item Hjalp de universitetsstuderende med deres opgaver i forlængelse af deres forelæsning.
-				\item Rettede elevernes opgaver og gav dem konstruktiv feedback.
-				\\\\\textit{Anbefaling fra kursusholder kan tilsendes, hvis det ønskes.}
+				\item Assisted the university students with their exercises after the lecture
+				\item Corrected the student's assignments and provided them with constructive feedback
+				\\\\\textit{A recommendation from the lecturer can be sent upon request}
 			}}%Arbejdsopgaver
 		{\cvlist{
-				\item C (Programmeringssprog)
+				\item C (Programming language)
 			}}%Involverede teknologier
-		{\cvlist{
-				\item En af de studerende kontaktede mig efterfølgende og udtrykte sin tilfredshed med min hjælp i forbindelse med kurset. I forlængelse af det spurgte han, om jeg havde lyst til at være hans mentor. Det syntes jeg lød spændende, så det takkede jeg selvfølgelig ja til.
-			}}%Resultater
+		{}%Resultater
 
 		% \cvevent
 		% {Jul 20 - Nov 20}
@@ -660,19 +713,19 @@
 		% 	}}%Involverede teknologier
 		% {}%Resultater
 
-		\cvevent
-		{Nov 18 - Feb 19}
-		{Skiinstruktør}
-		{Niseko Village Snow School}
-		{Instruerede gæster i hvordan man står på ski. Arbejdede stort set hver dag hele sæsonen.}
-		{\cvlist {
-				\item Instruktion af alle aldersgrupper og niveauer.
-				\item Snerydning om morgenen.
-				\item Opsætning af børneområde.
-				\\\\\textit{Skiskolens vurdering af min indsats kan tilsendes, hvis det ønskes.}
-			}}%Arbejdsopgaver
-		{}%Involverede teknologier
-		{}%Resultater
+		% \cvevent
+		% 	{Nov 18 - Feb 19}
+		% 	{Skiinstruktør}
+		% 	{Niseko Village Snow School}
+		% 	{Instruerede gæster i hvordan man står på ski. Arbejdede stort set hver dag hele sæsonen.}
+		% 	{\cvlist {
+		% 	    \item Instruktion af alle aldersgrupper og niveauer.
+		% 	    \item Snerydning om morgenen.
+		% 	    \item Opsætning af børneområde.
+		% 	    \\\\\textit{Skiskolens vurdering af min indsats kan tilsendes, hvis det ønskes.}
+		% 	}}%Arbejdsopgaver
+		% 	{}%Involverede teknologier
+		% 	{}%Resultater
 
 		% \cvevent
 		% 	{Jan 17 - Nov 18}
@@ -780,23 +833,26 @@
 		%	FRIVILLIGE GØREMÅL
 		%----------------------------------------------------------------------------------------
 		% \vfill\null
-		\cvsection{FRIVILLIGE GØREMÅL}
+		\cvsection{VOLUNTEERING}
 
 		\cvevent
-		{Dec 20 - nu}
-		{Formand}
+		{Dec 20 - Jun 22}
+		{Chairman}
 		{ABK-Net}
-		{Formand for netforeningen på Arbejderbevægelsens Kollegium, hvor jeg bor. Vi har ansvaret for alle 198 lejligheders internet, kollegiets hjemmeside samt kollegiets mailservice. Dette indebærer håndtering af sikkerhed samt vedligeholdelse af systemerne.
+		{We were responsible for all 198 apartment's internet, ABK's home page as well as the ABK's mail service. This included handling the security and maintenance of the systems.\\\\
+			GitLab: \url{https://gitlab.com/abk-aalborg}\\
 		}
 		{}%Arbejdsopgaver
-		{}%Involverede teknologier
 		{\cvlist{
-				\item Kollegiets hjemmeside: \url{https://abk-aalborg.dk/}
-				\item Under mit formandskab formåede vi at opsætte netværket på ny helt fra bunden af. Det involverede køb samt opsætning af udstyret. Det resulterede i en opgradering af hver kollegianers internetforbindelse fra 100 Mbit til 1 Gbit.
+				\item Hugo, Netlify CMS, NixOS, Grafana
+			}}%Involverede teknologier
+		{\cvlist{
+				\item ABK's home page: \url{https://abk-aalborg.dk/}
+				\item Developed a new network setup from the bottom up, upgrading all of the residents of ABK's internet connection from 100 Mbit to 1 Gbit.
 			}}%Resultater
 
 		% \cvevent
-		% {Aug 20 - nu}
+		% {Aug 20 - Jun 22}
 		% {Bestyrelsesmedlem}
 		% {ABK-Net}
 		% {}
@@ -805,10 +861,10 @@
 		% {}%Resultater
 
 		% \cvevent
-		% {Sep 20 - nu}
+		% {Sep 20 - Nov 21}
 		% {Tutor}
 		% {Aalborg Universitet}
-		% {Sørger for en god studiestart for de nye studerende på softwarestudiet.}
+		% {Sørgede for en god studiestart for de nye studerende på softwarestudiet.}
 		% {}%Arbejdsopgaver
 		% {}%Involverede teknologier
 		% {}%Resultater
@@ -823,23 +879,23 @@
 		% {}%Involverede teknologier
 		% {}%Resultater
 
-		\cvevent
-		{Feb 18 - nu}
-		{Skiinstruktør}
-		{Silkeborg Skiklub}
-		{Instruerer på klubbens årlige skitur i uge 7.}
-		{}%Arbejdsopgaver
-		{}%Involverede teknologier
-		{}%Resultater
+		% \cvevent
+		% 	{Feb 18 - nu}
+		% 	{Skiinstruktør}
+		% 	{Silkeborg Skiklub}
+		% 	{Instruerer på klubbens årlige skitur i uge 7.}
+		% 	{}%Arbejdsopgaver
+		% 	{}%Involverede teknologier
+		% 	{}%Resultater
 
-		\cvevent
-		{Feb 20 - nu}
-		{Skiinstruktør}
-		{Skiklubben Harreskov}
-		{Instruerer på ture, når det passer med studiet.}
-		{}%Arbejdsopgaver
-		{}%Involverede teknologier
-		{}%Resultater
+		% \cvevent
+		% 	{Feb 20 - nu}
+		% 	{Skiinstruktør}
+		% 	{Skiklubben Harreskov}
+		% 	{Instruerer på ture, når det passer med studiet.}
+		% 	{}%Arbejdsopgaver
+		% 	{}%Involverede teknologier
+		% 	{}%Resultater
 
 		% \cvevent
 		% 	{Aug 16 - Sep 16}
@@ -870,14 +926,14 @@
 		% 	{}%Resultater
 
 		% \cvevent
-		% {Sep 13 - Maj 14}
-		% {Parkourtræner}
-		% {Silkeborg Ungdomsskole}
-		% {Trænede et parkourhold en gang om ugen i 2 timer.
+		% 	{Sep 13 - Maj 14}
+		% 	{Parkourtræner}
+		% 	{Silkeborg Ungdomsskole}
+		% 	{Trænede et parkourhold en gang om ugen i 2 timer.
 		% 	\\\\\textit{Min leders vurdering af min indsats kan tilsendes, hvis det ønskes.}}
-		% {}%Arbejdsopgaver
-		% {}%Involverede teknologier
-		% {}%Resultater
+		% 	{}%Arbejdsopgaver
+		% 	{}%Involverede teknologier
+		% 	{}%Resultater
 
 		% hotfixes to create fake-space to ensure the whole height is used
 		% \mbox{}
