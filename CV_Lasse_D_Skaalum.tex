@@ -267,7 +267,7 @@
 		\begin{tabular*}{1\mpwidth}{p{0.72\mpwidth}  r}
 	 		\textcolor{black}{\Large\textbf{#2}} & \colorbox{maincol}{\makebox[0.25\mpwidth]{\textcolor{white}{#1}}} \\
 			\textcolor{maincol}{\textbf{#3}} & \\
-		\end{tabular*}\\[8pt]
+		\end{tabular*}\\[2pt]
 	
 		\ifthenelse{\isempty{#4}}{}{
 			\cvtext{#4}
@@ -275,18 +275,18 @@
 	}
 
 	\ifthenelse{\isempty{#5}}{}{
-		\vspace{1pt} %Her stod 9pt før
+		\vspace{0pt}
 		{#5}
 	}
 
 	\ifthenelse{\isempty{#7}}{}{
-		\vspace{1pt} %Her stod 9pt før
+		\vspace{2pt}
 		\cvtext{\textbf{Resultater:}}
 		{#7}
 	}
 
 	\ifthenelse{\isempty{#6}}{}{
-		\vspace{1pt} %Her stod 9pt før
+		\vspace{0pt}
 		\cvtext{\textbf{Involverede teknologier:}}
 		{#6}
 	}
@@ -370,19 +370,25 @@
 		% \cvskill{Kommunikation}
 		%         {} {1} \\[-2pt]
 
-		% \cvskill{Googling}
-		%} {1} \\[-2pt]
-
-		\cvskill{C\# / .NET}
+		\cvskill{.NET (C\#)}
 		{} {1} \\[-2pt]
 
-		\cvskill{TypeScript / React.js}
+		\cvskill{React.js (TypeScript)}
 		{} {1} \\[-2pt]
+
+		% \cvskill{n8n}
+		%} {1} \\[-2pt]		
 		
 		% \cvskill{JavaScript}
-		%} {0.9} \\[-2pt]
+		%} {1} \\[-2pt]
+		
+		% \cvskill{GitHub Actions}
+		%} {1} \\[-2pt]
 
 		\cvskill{Docker}
+		{} {0.9} \\[-2pt]
+
+		\cvskill{Azure}
 		{} {0.9} \\[-2pt]
 
 		\cvskill{Git}
@@ -394,20 +400,17 @@
 		\cvskill{Python}
 		{} {0.8} \\[-2pt]
 		
-		\cvskill{Azure}
+		% \cvskill{SQL}
+		%} {0.8} \\[-2pt]
+
+		\cvskill{Spring Boot (Java)}
 		{} {0.8} \\[-2pt]
-		
-		\cvskill{Java / Spring Boot}
-		{} {0.7} \\[-2pt]
 
 		\cvskill{Grafana}
 		{} {0.7} \\[-2pt]
 
 		\cvskill{Apache Kafka}
 		{} {0.6} \\[-2pt]
-
-		% \cvskill{SQL}
-		%} {0.7} \\[-2pt]
 		
 		% \cvskill{C (ANSI C89)}
 		%} {0.6} \\[-2pt]
@@ -426,16 +429,19 @@
 
 		% \cvskill{AWS}
 		%} {0.5} \\[-2pt]
+
+		% \cvskill{Kubernetes}
+		%} {0.5} \\[-2pt]		
 		
 		% \vfill\null
 		% \iconhref{Home}{12}{Skaalum.eu (Portfolio)}{https://skaalum.eu/}{black}\\[6pt]
 		\iconhref{Github}{12}{GitHub.com/humleflue}{https://github.com/humleflue}{black}\\[6pt]
 
-		\vfill\null
+		\vspace{1pt}
 		\cvsection{KONTAKT}\\
-		\icontext{MapMarker}{12}{\#106, Almeria E, Block C\\137 Al Mouj, Muscat, Oman}{black}\\[6pt]
+		\icontext{MapMarker}{12}{Poul Hartlings Gade 5, 1.tv, 2300 København S}{black}\\[6pt]
 		% \iconhref{MobilePhone}{12}{+45 4241 1996}{tel:+4542411996}{black}\\[6pt]
-		\iconhref{MobilePhone}{12}{+968 7748 1996}{tel:+96877481996}{black}\\[6pt]
+		\iconhref{MobilePhone}{12}{+45 4241 1996}{tel:+4542411996}{black}\\[6pt]
 		\iconemail{Envelope}{12}{lasse@bluebirdday.dk}{black}\\[6pt]
 		\iconhref{Linkedin}{12}{linkedin.com/in/lasse-skaalum}{https://www.linkedin.com/in/lasse-skaalum/}{black}\\[-12pt]
 
@@ -586,7 +592,7 @@
 				\begin {center}
 				\HUGE{ \textbf{ \textcolor{white}{ \uppercase{ Lasse D. Skaalum } } } } \\[-24pt]
 				\textcolor{white}{ \rule{0.1\textwidth}{1.25pt} } \\[4pt]
-				\large{ \textcolor{white} {Forvandler kaffe til kode} }
+				\large{ \textcolor{white} {Senior Softwareudvikler} }
 				\end {center}
 			\end{minipage}} \\[14pt]
 		\vspace{-12pt}
@@ -603,9 +609,9 @@
 
 		\cvtext{Jeg er en ambitiøs, ekstrovert og entreprenant full-stack softwareudvikler med flair for komplekse backendopgaver, som graviterer mod arbejdspladser, hvor socialt samværd og vidensdeling er i fokus.\\
 		
-		Jeg har 3 års fuldtidserfaring som softwareudvikler og har altid haft tekniske projekter, som jeg har mingeleret med efter arbejde - alt fra startups til home automation.\\
+		Jeg har 4 års fuldtidserfaring som softwareudvikler og har altid haft tekniske projekter, som jeg har kastet mig over efter arbejde - alt fra startups til home automation.\\
 
-		Hvis I vælger at ansætte mig, så vil I få en selvdisciplineret, udadvendt og dygtig softwareudvikler, som formår at skrive knaldgod kode i samarbej-de med sine kollegaer.
+		Hvis I vælger at ansætte mig, så vil I få en selvdisciplineret, udadvendt og dygtig softwareudvikler, som trives med ansvar og foretrækker at tage ansvar for at drive samarbejde og udvikling i teamet.
 		}
 
 		%----------------------------------------------------------------------------------------
@@ -617,20 +623,21 @@
 		\cvevent
 		{Jun 23 - nu}
 		{Softwarekonsulent}
-		{Trifork - København}
-		{Ledende levering af Corax AI til en forsikringsmægler}
+		{Trifork (København)}
+		{}
 		{\cvlist{
-			\item Ansvarlig for den tekniske levering af en \href{https://trifork.com/corax-ai/}{Corax AI}-drevet platform, der automatiserer kerneprocesser hos en forsikringsmægler, i tæt samarbejde med kundens ledelse.
+			\item Ansvarlig for den tekniske levering af en \href{https://trifork.com/corax-ai/}{Corax AI}-drevet platform, der automatiserer kerneprocesser for en forsikringsmægler.
+			\item Ansvarlig for en \href{https://trifork.com/corax-ai/}{Corax AI}-drevet mødereferatsløsning til flere danske fonde
 		}}%Arbejdsopgaver
 		{\cvlist{
-			\item Azure, Docker, Quarkus (Java), Terraform, GitHub Actions, Next.js (TypeScript)
+			\item Azure, Docker, Quarkus (Java), Terraform, GitHub Actions, Next.js (TypeScript), n8n, Python
 		}}%Involverede teknologier
 		{}%Resultater
 
 		\cvevent
 		{Aug 24 - Sep 25}
 		{Softwarekonsulent}
-		{Trifork - Muscat}
+		{Trifork (Muscat)}
 		{Udstationeret på Big Data projekt}
 		{\cvlist{
 			\item Ansvarlig for implementering af nye features, bugfixes, automatiseringer samt udskifting af fysisk hardware på en Big Data platform med yderst store datamængder.
@@ -645,7 +652,7 @@
 		\cvevent
 		{Jun 23 - Jul 24}
 		{Softwarekonsulent}
-		{Trifork - København}
+		{Trifork (København)}
 		{}
 		{}%Arbejdsopgaver
 		{\cvlist{
@@ -658,17 +665,17 @@
 		}}%Resultater
 
 		\cvevent
-		{Sep 23 - nu}
+		{Sep 23 - Sep 25}
 		{Interim CTO}
 		{DJTILBUD (deltid)}
-		{}
+		{Stod for at udvikle \href{https://djtilbud.dk/}{DJTILBUD}s platform fra bunden af, hvor kunder kan modtage tre tilbud fra forskellige DJs.}
 		{}%Arbejdsopgaver
 		{\cvlist{
 			\item React.js (TypeScript), Next.js, Supabase, Grafana
 			}}%Involverede teknologier
 		{\cvlist{
-			\item Stod for at udvikle \href{https://djtilbud.dk/}{DJTILBUD}s platform fra bunden af, hvor kunder kan modtage tre tilbud fra forskellige DJs.
-			\item Jobsamtaler samt oplæring af udenlandske software freelancere.
+			\item Skalerede virksomheden til 300.000 kr./md. i omsætning.
+			\item Jobsamtaler samt oplæring af udenlandske software freelancere og potentielle CTOs.
 		}}%Resultater
 
 		\cvevent
@@ -681,7 +688,7 @@
 			\item Projektstyring og ledelse af 1 fuldtidsmedarbejder og 5 fuldtidspraktikanter
 		}}%Arbejdsopgaver
 		{\cvlist{
-			\item ASP.NET (C\#), React.js (TypeScript), React Native, Azure
+			\item ASP.NET (C\#), React.js (TypeScript), React Native, Azure, GitHub Actions
 		}}%Involverede teknologier
 		{\cvlist{
 			\item Fuldt funktionel MVP leancering med separerede dev og prod miljøer.
@@ -692,7 +699,7 @@
 		{Jun 21 - Jun 22}
 		{Softwareudvikler}
 		% {Studenterprogrammør}
-		{Trifork - Aalborg}
+		{Trifork (Aalborg)}
 		{}
 		{\cvlist{
 				\item Domænemodellering af et HR-datasystem både i backend og på databaseniveau.
@@ -715,20 +722,20 @@
 		% 		\item Min mentee havde ambitioner om at blive den dygtigste software ingeniør, så det gjorde jeg mit bedste for at hjælpe ham med. Det har resulteret i flere topkarakterer, som han har været meget stolt af.
 		% 	}}%Resultater
 
-		\cvevent
-		{Sep 20 - Jun 21}
-		{Hjælpelærer}
-		{Aalborg Universitet}
-		{Hjælpelærer i fagene \textbf{Imperativ Programmering} og \textbf{Algoritmer og Datastrukturer}.}
-		{\cvlist{
-				\item Hjalp de universitetsstuderende med deres opgaver i forlængelse af deres forelæsning.
-				\item Rettede elevernes opgaver og gav dem konstruktiv feedback.
-				\\\\\textit{Anbefaling fra kursusholder kan tilsendes, hvis det ønskes.}
-			}}%Arbejdsopgaver
-		{\cvlist{
-				\item C (Programmeringssprog)
-			}}%Involverede teknologier
-		{}%Resultater
+		% \cvevent
+		% {Sep 20 - Jun 21}
+		% {Hjælpelærer}
+		% {Aalborg Universitet}
+		% {Hjælpelærer i fagene \textbf{Imperativ Programmering} og \textbf{Algoritmer og Datastrukturer}.}
+		% {\cvlist{
+		% 		\item Hjalp de universitetsstuderende med deres opgaver i forlængelse af deres forelæsning.
+		% 		\item Rettede elevernes opgaver og gav dem konstruktiv feedback.
+		% 		\\\\\textit{Anbefaling fra kursusholder kan tilsendes, hvis det ønskes.}
+		% 	}}%Arbejdsopgaver
+		% {\cvlist{
+		% 		\item C (Programmeringssprog)
+		% 	}}%Involverede teknologier
+		% {}%Resultater
 
 		% \cvevent
 		% {Jul 20 - Nov 20}
