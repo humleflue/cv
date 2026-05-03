@@ -167,8 +167,12 @@
 % light color
 \definecolor{lightcol}{RGB}{245,245,245}
 
+% soft light blue color (for hyperlinks)
+\definecolor{lightblue}{RGB}{51, 122, 183}
+
 % Package for links, must be the last package used
 \usepackage[hidelinks]{hyperref}
+\hypersetup{colorlinks,urlcolor=lightblue} 
 
 % returns minipage width minus two times \fboxsep
 % to keep padding included in width calculations
@@ -367,9 +371,6 @@
 		% \cvskill{Kommunikation}
 		%         {} {1} \\[-2pt]
 
-		\cvskill{OpenCode / Claude Code / Codex CLI}
-		{} {1} \\[-2pt]
-
 		\cvskill{.NET (C\#)}
 		{} {1} \\[-2pt]
 
@@ -386,6 +387,9 @@
 		%} {1} \\[-2pt]
 
 		\cvskill{Docker}
+		{} {1} \\[-2pt]
+
+		\cvskill{OpenCode / Claude Code / Codex CLI}
 		{} {1} \\[-2pt]
 
 		\cvskill{Git}
@@ -441,11 +445,11 @@
 		\iconhref{Github}{12}{GitHub.com/humleflue}{https://github.com/humleflue}{black}\\[6pt]
 
 		\vspace{1pt}
-		\cvsection{KONTAKT}\\
-		\icontext{MapMarker}{12}{Poul Hartlings Gade 5, 1. tv\\2300 Copenhagen, Denmark}{black}\\[6pt]
+		\cvsection{CONTACT}\\
+		\icontext{MapMarker}{12}{Poul Hartlings Gade 5, 1.tv, 2300 Copenhagen S}{black}\\[6pt]
 		\iconhref{MobilePhone}{12}{+45 4241 1996}{tel:+4542411996}{black}\\[6pt]
 		\iconemail{Envelope}{12}{lasse@bluebirdday.dk}{black}\\[6pt]
-		\iconhref{Linkedin}{12}{linkedin.com/in/lasse-skaalum}{https://www.linkedin.com/in/lasse-skaalum/}{black}\\[6pt]
+		\iconhref{Linkedin}{12}{linkedin.com/in/lasse-skaalum}{https://www.linkedin.com/in/lasse-skaalum/}{black}\\[-12pt]
 
 		% \vfill\null
 		% \cvqrcode{0.7}
@@ -488,14 +492,12 @@
 		{2023}
 		{Kubernetes Developer}
 		{\href{https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/}{Certified Kubernetes Application Developer (CKAD)}}
-		{The CKAD can design, build and deploy cloud-native applications for Kubernetes.\\
-A CKAD can define application resources and use Kubernetes core primitives to create/migrate, configure, expose and observe scalable applications.}
+		{A CKAD can design, build, configure, and expose cloud-native applications for Kubernetes.}
 
 		\cvsection{Languages}
 		\cvlist{
 			\item Danish (Native)
 			\item English (Fluent)
-			\item Chinese, Arabic, German, Swedish, Norwegian (Basic)
 		}
 
 		\cvsection{Hobbies}
@@ -504,6 +506,7 @@ A CKAD can define application resources and use Kubernetes core primitives to cr
 			\item Skiing
 			\item Beach volleyball
 			\item Home automation
+			\item \href{https://www.stigpaa.dk/}{Stig På} - comparison platform for public transport in DK
 		}
 
 		% \cvmetaevent
@@ -566,7 +569,7 @@ A CKAD can define application resources and use Kubernetes core primitives to cr
 
 		\cvtext{I am an ambitious, extroverted, and entrepreneurial full-stack software engineer with a flair for complex backend work, drawn to workplaces where social connection and knowledge sharing are in focus.\\
 		
-		I have 4 years of full-time experience as a software engineer and have always pursued technical projects after work - from startups to home automation. I also have solid experience with recruitment and sales.\\
+		I have 4 years of full-time experience as a software engineer and have always pursued technical projects after work - from startups to home automation. I also have solid experience with recruitment, sales, and leadership.\\
 
 		If you choose to employ me, you will get a self-disciplined, outgoing, and skilled software engineer who thrives on responsibility and prefers to take ownership of driving collaboration and development within the team.
 		}
@@ -581,18 +584,19 @@ A CKAD can define application resources and use Kubernetes core primitives to cr
 		{Jun 23 - now}
 		{Software Consultant}
 		{Trifork}
-		{Consultant across multiple projects and clients. Beyond software engineering, I have also had responsibilities in sales and recruitment.}
+		{Consultant across multiple projects and clients. Beyond software engineering, I have also had responsibilities in sales, recruitment, and leadership.}
 		{\cvlist{
-			\item Stationed abroad in Muscat, Oman for 14 months.
+			\item \textbf{Stationed abroad in Muscat, Oman for 14 months}. The rest of my time I have developed projects for clients in the Copenhagen area.
 			\item Responsible for software development and physical hardware replacement on a Big Data platform handling extremely large data volumes.
 			\item Pitched \href{https://trifork.com/corax-ai/}{Corax AI} and \href{https://trifork.com/dataplatform/}{Corax Data} to prospective clients.
+			\item Hired multiple software developers, including a senior software developer, and was responsible for onboarding and training them.
 		}}%Arbejdsopgaver
 		{\cvlist{
 			\item Azure, Docker, Quarkus (Java), Spring Boot (Java), ASP.NET (C\#), Terraform, GitHub Actions, Next.js (TypeScript), React.js (TypeScript), n8n, Python, Grafana, Apache Kafka, Apache Flink, Elasticsearch, JavaScript, Ansible, Swift
 		}}%Involverede teknologier
 		{\cvlist{
-			\item Drove LLM adoption and change management at a large Danish public sector client.
-			\item Delivered an LLM-powered platform that automates core processes for insurance brokers.
+			\item Led a team of 2 developers and 1 intern in developing an LLM-powered platform that automates core processes for insurance brokers. The platform reduces brokers' time spent by over 75\%.
+			\item Drove LLM adoption and change management at a large Danish public sector client alongside delivery of an on-prem PoC.
 			\item Delivered an LLM-powered meeting minutes solution to several Danish foundations.
 			\item Developed middleware between SAP and MongoDB's Realm using microservices for version 3 of Banedanmark's app, VHQM.
 			\item Executed a full Azure cloud migration of Banedanmark's web application, Mobile Kontrolskemaer (MKS).
@@ -614,7 +618,7 @@ A CKAD can define application resources and use Kubernetes core primitives to cr
 		}}%Resultater
 
 		\cvevent
-		{Feb 22 - Jun 23}
+		{Feb 22 - May 23}
 		{CTO \& Co-Founder}
 		{Instructr}
 		{Instructr was a B2B SaaS company where we built a white-label blended learning product for sports schools such as ski and surf schools.}
