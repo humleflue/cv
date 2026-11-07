@@ -34,14 +34,14 @@ Produce a targeted version of the CV for one job application. Every choice is co
 Run grilling rounds, one area per round, each question numbered with a recommended answer. Ask only what the current round's frontier allows; later rounds depend on earlier answers.
 
 1. **Basics + missing skills** — confirm CV language, company/role slug for the branch name, and the must-have/nice-to-have split. For every JD term marked *unknown*, ask whether the user has experience with it (level, where, when). No experience → omit it from the CV entirely. Experience → plan where to weave it in (skills section, a job's technologies line, or a bullet).
-2. **Skills section** — proposed order (most JD-relevant first) and weights (see *Skill weights*).
+2. **Skills section** — proposed order (highest weight first, with JD relevance breaking ties) and weights (see *Skill weights*).
 3. **Job entries** — per `\cvevent`: order of task bullets, result bullets, and technologies; rewordings using JD vocabulary; bullets to hide; the "also delivered" summary bullet (see *Bullets*).
 4. **Languages** — propose additions only on a clear signal (see *Languages*).
 5. **Header, profile, hobbies** — header subtitle, profile text diff, hobby order.
 
 ### 4. Persist new facts on `main`
 
-If grilling produced new facts (skills the user has or lacks, levels, contexts), update `references/skills-inventory.md` on `main` and commit **only that file**:
+If grilling produced new durable facts—such as skills the user has or lacks, levels, contexts, languages, or work preferences—update `references/skills-inventory.md` on `main` and commit **only that file**:
 
 ```
 git add .agents/skills/tailor-cv/references/skills-inventory.md
@@ -55,18 +55,21 @@ Do this before branching so every future branch inherits the knowledge.
 1. `git switch -c tailor/<company>-<role>` (lowercase kebab-case, e.g. `tailor/novo-nordisk-senior-backend-engineer`).
 2. Save the pasted JD verbatim as `jd.md` at the repo root.
 3. Apply exactly the changes confirmed in grilling to the chosen `.tex` file.
-4. Do **not** commit, push, or merge. Leave everything uncommitted on the branch.
+4. Treat each confirmed change independently: a decision to leave one passage unchanged must not revert another approved addition.
+5. Rebuild after each substantial content addition. If the page count grows, shorten generic wording before hiding JD-relevant evidence; use the `question` tool when removal involves a content tradeoff.
+6. Do **not** commit, push, or merge. Leave everything uncommitted on the branch.
 
 ### 6. Verify
 
 1. Build: `latexmk -pdf <file>.tex`.
 2. Check page count is unchanged versus `main` (e.g. `pdfinfo <file>.pdf | grep Pages`; compare to the count before editing).
 3. Scan the log for overfull boxes introduced by the edits; fix by trimming wording.
-4. Check every must-have the user actually has appears verbatim (JD spelling) at least once.
+4. Extract and inspect each page separately with `pdftotext -f <n> -l <n> -layout <file>.pdf -` to check that all expected sections and text are present, including the final section. Visually inspect the rendered pages for clipping or overlap; neither page count nor text extraction alone can detect these reliably.
+5. Check every must-have the user actually has appears verbatim (JD spelling) at least once.
 
 ### 7. Report
 
-Short summary only: branch name, file edited, and a few lines on what changed.
+Short summary only: branch name, file edited, and a few lines on what changed. Also list any durable facts confirmed after branching that still need to be persisted to the inventory on `main`.
 
 ## Tailoring rules
 
@@ -83,7 +86,7 @@ Weights are not static. The user can read up before an interview, so a JD-critic
 - Boost JD-relevant skills by **at most +0.2** over the inventory/CV value, capped at `1`.
 - Lower or comment out skills irrelevant to the JD to make room.
 - Restore commented-out skills (and inventory skills) when the JD makes them relevant, using their inventory weight as the baseline.
-- Order: most JD-relevant first; among equally relevant, higher weight first.
+- Order: higher weight first; among equal weights, most JD-relevant first.
 
 ### Bullets and technologies (per `\cvevent`)
 
@@ -116,6 +119,7 @@ The header subtitle (currently `Senior Software Engineer`) may be adapted to the
 
 - Subtle but noticeable: weave in **2–4** JD terms/themes.
 - Keep structure, voice, and paragraphs; word count within **±10%** of the original.
+- Preserve the user's expressed preferences and enthusiasm; concise wording must not flatten genuine excitement into neutral availability.
 - Never change factual claims (e.g. years of experience).
 
 ### Other sections
