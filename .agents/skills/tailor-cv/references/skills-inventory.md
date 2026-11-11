@@ -41,8 +41,8 @@ Source of truth for skills, languages, and work preferences beyond what is curre
 | Skill | Weight | Status | Context |
 | --- | --- | --- | --- |
 | Teaching experience | 1.0 | hidden | 12 years |
-| AI Strategy & Adoption | 1.0 | active | Trifork — executive discovery workshops and customer AI adoption roadmaps |
-| Executive Communication | 1.0 | active | Trifork — VP/C-level customer advice and presentations |
+| AI Strategy & Adoption | 1.0 | active | Trifork — executive discovery workshops, customer AI adoption roadmaps, and change management for a public-sector AI product rollout to 17,000 users (in progress) |
+| Executive Communication | 1.0 | active | Trifork — VP/C-level customer advice and presentations; translates frontier research into practical guidance on building with AI |
 | Value-based Selling | 0.9 | active | Trifork — pre-sales, Corax AI/Data pitches, business cases and ROI |
 | Cross-functional Collaboration | 1.0 | active | Trifork — customer feedback into product/research roadmaps; reusable assets, best practices and playbooks |
 | Business Value Realization | 0.9 | active | Trifork — business-outcome KPI monitoring and account expansion opportunities |
@@ -75,3 +75,5 @@ Skills the user has confirmed they lack. Never add these to the CV.
 | Skill | Confirmed |
 | --- | --- |
 | MEDDPICC | 2026-11-07 |
+| Public AI track record (papers, articles, talks, or analyst briefings) | 2026-11-11 |
+| Open-weight models (hands-on experience or public position) | 2026-11-11 |
