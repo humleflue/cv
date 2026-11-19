@@ -9,25 +9,32 @@ Source of truth for skills, languages, and work preferences beyond what is curre
 
 | Skill | Weight | Status | Where used / context |
 | --- | --- | --- | --- |
-| .NET (C#) | 1.0 | active | Trifork (ASP.NET), Instructr |
+| .NET (C#) | 1.0 | hidden | Trifork (ASP.NET), Instructr |
 | React.js (TypeScript) | 1.0 | active | Trifork, DJTILBUD, Instructr |
+| Next.js | 1.0 | active | DJTILBUD, Trifork |
 | Docker | 1.0 | active | Trifork |
+| Vercel | 0.8 | active | DJTILBUD, Instructr |
 | AI Harness Engineering | 1.0 | active | Trifork — Corax AI (agent orchestration, tool calling, RAG, guardrails, evaluation) |
 | AI Prototyping & PoC Delivery | 1.0 | active | Trifork — on-prem LLM PoC and production-ready LLM solutions |
 | End-to-end AI Solution Deployment | 1.0 | active | Trifork — Python AI applications integrated into customer workflows and production infrastructure |
+| AI-Assisted Development (Claude Code, Cursor, AI PR-review) | 0.9 | active | Trifork — daglig praksis; AI-agenter reviewer PRs i CI/CD |
 | Machine Learning | 0.5 | inventory | Aalborg University — Machine Intelligence course, time-series projects, embedded SVM in C |
 | Git | 1.0 | active | All roles |
 | Azure | 0.9 | active | Trifork (incl. Banedanmark MKS migration), Instructr |
-| Spring Boot / Quarkus (Java) | 0.9 | active | Trifork |
+| Azure OpenAI | 0.8 | active | Trifork — Corax AI LLM-features |
+| MCP server | 0.7 | active | Trifork — Corax AI |
+| Spring Boot / Quarkus (Java) | 0.9 | hidden | Trifork |
 | Python | 0.8 | active | Trifork — building and deploying AI applications, including production LLM solutions |
+| PostgreSQL | 0.9 | active | DJTILBUD, Instructr, Trifork |
+| Supabase (RLS, storage) | 0.8 | active | DJTILBUD |
 | Terraform | 0.8 | active | Trifork |
 | Observability (LGTM) | 0.7 | active | Trifork, DJTILBUD (Grafana) |
-| Apache Kafka | 0.6 | active | Trifork (Big Data platform) |
+| Apache Kafka | 0.6 | hidden | Trifork (Big Data platform) |
 | n8n | 1.0 | hidden | Trifork |
 | JavaScript | 1.0 | hidden | Trifork |
-| GitHub Actions | 1.0 | hidden | Trifork, Instructr |
+| GitHub Actions | 1.0 | active | Trifork, Instructr |
 | Node.js | 1.0 | hidden | |
-| SQL | 0.8 | hidden | Trifork (MS SQL) |
+| SQL | 0.8 | active | Trifork (MS SQL, PostgreSQL), DJTILBUD, Instructr |
 | C (ANSI C89) | 0.6 | hidden | Aalborg University (TA, Imperative Programming) |
 | React Native | 0.6 | hidden | Instructr, Trifork |
 | Apache Flink | 0.5 | hidden | Trifork (Big Data platform) |
@@ -77,3 +84,4 @@ Skills the user has confirmed they lack. Never add these to the CV.
 | MEDDPICC | 2026-11-07 |
 | Public AI track record (papers, articles, talks, or analyst briefings) | 2026-11-11 |
 | Open-weight models (hands-on experience or public position) | 2026-11-11 |
+| Databricks/PySpark | 2026-11-19 |
