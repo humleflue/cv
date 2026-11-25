@@ -14,8 +14,8 @@ Source of truth for skills, languages, and work preferences beyond what is curre
 | Next.js | 1.0 | active | DJTILBUD, Trifork |
 | Docker | 1.0 | active | Trifork |
 | Vercel | 0.8 | active | DJTILBUD, Instructr |
-| AI Harness Engineering | 1.0 | active | Trifork — Corax AI (agent orchestration, tool calling, RAG, guardrails, evaluation) |
-| AI Prototyping & PoC Delivery | 1.0 | active | Trifork — on-prem LLM PoC and production-ready LLM solutions |
+| AI Harness Engineering | 1.0 | active | Trifork — Corax AI (AI agents, tool calling, RAG, guardrails, evaluation, and data/security oversight) for regulated public-sector and insurance environments |
+| AI Prototyping & PoC Delivery | 1.0 | active | Trifork — on-prem LLM productized pilots/PoCs and production-ready LLM solutions |
 | End-to-end AI Solution Deployment | 1.0 | active | Trifork — Python AI applications integrated into customer workflows and production infrastructure |
 | AI-Assisted Development (Claude Code, Cursor, AI PR-review) | 0.9 | active | Trifork — daglig praksis; AI-agenter reviewer PRs i CI/CD |
 | Machine Learning | 0.5 | inventory | Aalborg University — Machine Intelligence course, time-series projects, embedded SVM in C |
@@ -42,15 +42,17 @@ Source of truth for skills, languages, and work preferences beyond what is curre
 | Kotlin | 0.5 | hidden | Trifork |
 | AWS | 0.5 | hidden | |
 | Kubernetes | 0.5 | hidden | CKAD certified (2023) |
+| Integrations & APIs | 0.9 | active | Trifork — SAP–MongoDB Realm middleware, microservices, and customer integration data flows |
+| SaaS Configuration | 0.8 | active | Instructr and DJTILBUD — configuration of own B2B SaaS platforms |
 
 ## Soft skills
 
 | Skill | Weight | Status | Context |
 | --- | --- | --- | --- |
 | Teaching experience | 1.0 | hidden | 12 years |
-| AI Strategy & Adoption | 1.0 | active | Trifork — executive discovery workshops, customer AI adoption roadmaps, and change management for a public-sector AI product rollout to 17,000 users (in progress) |
+| AI Strategy & Adoption | 1.0 | active | Trifork — executive technical discovery, customer AI adoption roadmaps, maturity assessments, account technology plans, and change management for a public-sector AI product rollout to 17,000 users (in progress) |
 | Executive Communication | 1.0 | active | Trifork — VP/C-level customer advice and presentations; translates frontier research into practical guidance on building with AI |
-| Value-based Selling | 0.9 | active | Trifork — pre-sales, Corax AI/Data pitches, business cases and ROI |
+| Value-based Selling | 0.9 | active | Trifork — pre-sales, Corax AI/Data and bespoke software product demonstrations, business cases and ROI |
 | Cross-functional Collaboration | 1.0 | active | Trifork — customer feedback into product/research roadmaps; reusable assets, best practices and playbooks |
 | Business Value Realization | 0.9 | active | Trifork — business-outcome KPI monitoring and account expansion opportunities |
 | Workshop Facilitation | 0.6 | active | Trifork — executive-level AI strategy and adoption workshops |
@@ -74,6 +76,7 @@ Source of truth for skills, languages, and work preferences beyond what is curre
 | --- | --- | --- |
 | Location | Open to Stockholm-based work | 2026-11-07 |
 | Travel | 30–60% travel is a strong positive; use enthusiastic wording when relevant, such as “would love to travel 30–60%” | 2026-11-07 |
+| Full-time software engineering experience | 4.5 years; may be rounded to “~5 years” in the CV | 2026-11-25 |
 
 ## Confirmed: no experience
 
